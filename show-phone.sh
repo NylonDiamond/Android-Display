@@ -86,7 +86,7 @@ ctrl_c() {
 
         fi
 }
-if [[ -z "$1" || $1 == "--wifi" || $1 == "-w" ]]; then
+if [[ $1 == "--wifi" || $1 == "-w" ]]; then
         trap "ctrl_c" EXIT                                                               # info on trap: https://www.linuxjournal.com/content/bash-trap-command
         if [[ -z "$devicenumber1" && -z "$devicenumber2" && -z "$devicenumber3" ]]; then # all empty
                 echo "No devices set up (Run >>> ./show-phone.sh --setup)"
@@ -281,7 +281,7 @@ elif [[ "$1" == "--settings" || "$1" == "-st" ]]; then
         fi
         echo "Settings updated!"
 
-elif [[ "$1" == "--help" || "$1" == "-h" ]]; then
+elif [[ -z "$1" || "$1" == "--help" || "$1" == "-h" ]]; then
         echo ""
         echo "          Usage: ./show-phone.sh [options]"
         echo ""
