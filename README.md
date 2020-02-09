@@ -1,6 +1,5 @@
 # Display Android Script
 *Mirror and control your android phone from your mac.*
-
 ---
 
 **Mac Steps:**
@@ -43,3 +42,6 @@
 **Null keyboard**
 
 If you DON'T want the virtual keyboard to show on your screen, Download "Null Input Method" from here: https://play.google.com/store/apps/details?id=com.apedroid.hwkeyboardhelperfree&hl=en_US . My script will switch your phone's keyboard to "Null Input Method" if you have it installed and you have the "Use Null keyboard" setting set to `yes`. You can do this by running `./show-phone.sh --settings`.
+
+**Tools**
+The script uses SCRCPY https://github.com/Genymobile/scrcpy and Android-Platform-Tools https://developer.android.com/studio/releases/platform-tools for the heavy lifting. My script just makes it easier to use those tools to cast your phone to your computer.
