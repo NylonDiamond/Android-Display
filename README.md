@@ -4,7 +4,7 @@
 ---
 
 **Mac Steps:**
-1. Run the install script `./Install-Requirements.sh` in your terminal. If you already have Homebrew installed on your machine, Do NOT run the install-requirements script. Run "brew install `scrcpy` and `brew install android-platform-tools` to install the dependencies. You can check if you have Homebrew installed by typing `brew --version` into the terminal. If you get a version back, you have it installed.
+1. Run the install script `./Install-Requirements.sh` in your terminal. If you already have Homebrew installed on your machine, Do NOT run the install-requirements script. Run `brew install scrcpy` and `brew install android-platform-tools` to install the dependencies. You can check if you have Homebrew installed by typing `brew --version` into the terminal. If you get a version back, you have it installed.
 2. Run `./show-phone.sh --setup` and follow the setup process for up to 3 phones.
 3. Run `./show-phone.sh --wifi` for wireless mirroring or `./show-phone.sh --usb` for wired mirroring.
 4. Enjoy 🤙️
