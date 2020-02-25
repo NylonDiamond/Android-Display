@@ -1,6 +1,8 @@
 # Display Android Script
-*Mirror and control your android phone from your mac.*
+*Mirror and control your android phone from your mac (Bash Script)*
 ---
+
+I wrote this bash script to make it easier to mirror and control 1 or more android phones on your mac. I also made a video (https://youtu.be/bUe-wovw_1w) showing how to use the script.
 
 **Mac Steps:**
 1. Run the install script `./Install-Requirements.sh` in your terminal. If you already have Homebrew installed on your machine, Do NOT run the install-requirements script. Run `brew install scrcpy` and `brew install android-platform-tools` to install the dependencies. You can check if you have Homebrew installed by typing `brew --version` into the terminal. If you get a version back, you have it installed.
