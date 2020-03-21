@@ -191,12 +191,24 @@ elif [[ "$1" == "--usb" || "$1" == "-u" ]]; then
         done
         numberofdevices="${#devicemap[@]}"
         # echo "$numberofdevices"
+
+        choice="0"
         if [ "$numberofdevices" = 0 ]; then
                 echo "No devices detected. Plug in your android device with a usb cable and make sure you're in usb debugging mode."
                 exit 1
+        elif [ "$numberofdevices" = 1 ]; then
+                choice="1"
+        else
+                # wait for user input to choose device
+                read -p "Choose an Android device: " choice
         fi
-        # wait for user input to choose device
-        read -p "Choose an Android device: " choice
+
+        # choice = 1
+        #  if [ "$numberofdevices" = 1 ]; then
+
+        # fi
+        # # wait for user input to choose device
+        # read -p "Choose an Android device: " choice
 
         # chosen device id
         devicenumber=${devicemap[choice - 1]}
